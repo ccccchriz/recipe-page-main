@@ -123,6 +123,7 @@ h6 {
 }
 
 body {
+  counter-reset: instruction;
   display: grid;
   place-items: center;
   background-color: var(--clr-neutral-300);
@@ -245,9 +246,27 @@ body {
 .instructions__list {
   display: grid;
   gap: 0.5rem;
+  list-style: none;
+  padding: 0;
 }
 
-.card__nutrition {
+.instructions__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  margin-left: 0.5rem;
+}
+
+.instructions__item::before {
+  display: block;
+  counter-increment: instruction;
+  content: counter(instruction) ".";
+  color: var(--clr-primary-brown);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.instructions__item::before .card__nutrition {
   width: 100%;
   display: grid;
   gap: 1.5rem;
