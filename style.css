@@ -196,7 +196,7 @@ body {
   padding: 0;
 }
 
-.preparation__item {
+.list__item--dot {
   display: inline-flex;
   align-items: center;
 }
@@ -211,7 +211,8 @@ body {
   background-color: var(--clr-primary-red);
 }
 
-.card__ingredients {
+.card__in {
+  width: 100%;
   display: grid;
   gap: 1.5rem;
   padding-bottom: 2rem;
@@ -229,25 +230,12 @@ body {
   padding: 0;
 }
 
-.ingredients__item {
-  display: inline-flex;
-  align-items: center;
-}
-
-.card__instructions {
-  width: 100%;
-  display: grid;
-  gap: 1.5rem;
-  padding-bottom: 2rem;
-  border-bottom: 0.0625rem solid var(--clr-neutral-400);
-  color: var(--clr-neutral-500);
-}
-
 .instructions__list {
   display: grid;
   gap: 0.5rem;
   list-style: none;
   padding: 0;
+  color: var(--clr-neutral-500);
 }
 
 .instructions__item {
