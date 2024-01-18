@@ -266,7 +266,7 @@ body {
   font-weight: bold;
 }
 
-.instructions__item::before .card__nutrition {
+.card__nutrition {
   width: 100%;
   display: grid;
   gap: 1.5rem;
