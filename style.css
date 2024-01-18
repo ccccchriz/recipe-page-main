@@ -162,6 +162,7 @@ body {
   display: grid;
   gap: 1rem;
   background-color: var(--clr-neutral-200);
+  border-radius: 0.75rem;
 }
 
 .preparation__title {
@@ -273,4 +274,22 @@ body {
 .nutrition__item:last-child {
   border-bottom: none;
   padding-bottom: 0;
+}
+
+@media (min-width: 45rem) {
+  .card {
+    margin: 7.75rem 0;
+    max-width: 46rem;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    gap: 2.5rem;
+  }
+
+  .card__image {
+    border-radius: 0.75rem;
+  }
+
+  .card__recipe {
+    padding: 0;
+  }
 }
