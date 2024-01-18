@@ -156,6 +156,10 @@ body {
   color: var(--clr-neutral-500);
 }
 
+.card__paragraph--mt {
+  margin-top: -0.5rem;
+}
+
 .card__preparation {
   width: 100%;
   padding: 1.5rem;
